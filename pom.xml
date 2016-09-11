@@ -16,6 +16,8 @@
 
 	<properties>
  		<activiti.version>5.19.0.2</activiti.version>
+		<mysql.version>5.1.34</mysql.version>
+		<druid.version>1.0.20</druid.version>
 	</properties>
 
 	<dependencies>
@@ -25,10 +27,22 @@
 			<artifactId>activiti-spring-boot-starter-basic</artifactId>
 			<version>${activiti.version}</version>
 		</dependency>
+		<!--
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
  		</dependency>
+ 		-->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>${druid.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.activiti</groupId>
 			<artifactId>activiti-spring-boot-starter-rest-api</artifactId>

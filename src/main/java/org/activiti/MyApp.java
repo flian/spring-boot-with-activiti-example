@@ -6,7 +6,7 @@ import org.activiti.engine.identity.User;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
+
 
 @SpringBootApplication
 public class MyApp {
@@ -33,7 +33,8 @@ public class MyApp {
 //
 //    }
 
-    @Bean
+    //TODO uncommend follow first time run..
+    //@Bean
     InitializingBean usersAndGroupsInitializer(final IdentityService identityService) {
 
         return new InitializingBean() {
